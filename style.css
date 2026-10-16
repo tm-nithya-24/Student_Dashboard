@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* Page Background */
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f3f6fc;
+color: #202b45;
+line-height: 1.6;
+}
+
+/* Main Dashboard */
+.dashboard {
+width: 90%;
+max-width: 1200px;
+margin: 40px auto;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: linear-gradient(135deg, #182b59, #3157a4);
+color: white;
+padding: 35px;
+border-radius: 18px;
+box-shadow: 0 10px 25px rgba(24, 43, 89, 0.15);
+}
+
+.subtitle {
+color: #a9c5ff;
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 2px;
+margin-bottom: 8px;
+}
+
+.dashboard-header h1 {
+font-size: 30px;
+margin-bottom: 8px;
+}
+
+.header-description {
+color: #dce6ff;
+font-size: 14px;
+}
+
+.header-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 75px;
+height: 75px;
+background-color: rgba(255, 255, 255, 0.15);
+border-radius: 20px;
+font-size: 38px;
+}
+
+/* Statistics */
+.statistics {
+margin: 25px 0;
+}
+
+.stat-card {
+display: flex;
+align-items: center;
+gap: 18px;
+width: 100%;
+max-width: 350px;
+padding: 24px;
+background-color: white;
+border: 1px solid #e5eaf4;
+border-radius: 15px;
+box-shadow: 0 5px 18px rgba(30, 50, 90, 0.05);
+}
+
+.stat-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 58px;
+height: 58px;
+background-color: #e9efff;
+border-radius: 14px;
+font-size: 27px;
+}
+
+.stat-label {
+color: #64718a;
+font-size: 14px;
+}
+
+.stat-card h2 {
+color: #234b9b;
+font-size: 30px;
+}
+
+.stat-description {
+color: #8791a5;
+font-size: 11px;
+}
+
+/* Welcome Notice */
+.welcome-notice {
+display: flex;
+align-items: center;
+gap: 15px;
+padding: 20px;
+margin-bottom: 35px;
+background-color: #eaf4ff;
+border: 1px solid #d2e7ff;
+border-left: 5px solid #3478d4;
+border-radius: 12px;
+}
+
+.notice-icon {
+font-size: 27px;
+}
+
+.welcome-notice h3 {
+color: #234b8c;
+font-size: 16px;
+margin-bottom: 4px;
+}
+
+.welcome-notice p {
+color: #526580;
+font-size: 13px;
+}
+
+/* Profile Section */
+.profiles-section {
+margin-bottom: 40px;
+}
+
+.section-heading {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 22px;
+}
+
+.section-label {
+color: #5278c7;
+font-size: 11px;
+font-weight: bold;
+letter-spacing: 1.8px;
+}
+
+.section-heading h2 {
+font-size: 25px;
+margin-top: 4px;
+}
+
+.live-badge {
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 8px 13px;
+background-color: #e4f8ed;
+color: #218452;
+border-radius: 20px;
+font-size: 12px;
+font-weight: bold;
+}
+
+.status-dot {
+width: 8px;
+height: 8px;
+background-color: #28ad6b;
+border-radius: 50%;
+}
+
+/* Student Card Layout */
+.profile-container {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 22px;
+}
+
+/* Individual Student Cards */
+.student-card {
+padding: 24px;
+background-color: white;
+border: 1px solid #e6eaf2;
+border-radius: 16px;
+box-shadow: 0 5px 18px rgba(35, 55, 95, 0.05);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.student-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 25px rgba(35, 55, 95, 0.12);
+}
+
+/* Student Avatar */
+.student-avatar {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 58px;
+height: 58px;
+margin-bottom: 17px;
+background-color: #e8edff;
+color: #3456a0;
+border-radius: 16px;
+font-size: 22px;
+font-weight: bold;
+}
+
+/* Student Details */
+.student-name {
+color: #243453;
+font-size: 19px;
+margin-bottom: 5px;
+}
+
+.course-name {
+color: #697791;
+font-size: 13px;
+margin-bottom: 18px;
+}
+
+/* Skill */
+.skill-section {
+padding: 12px;
+margin-bottom: 14px;
+background-color: #f7f9fd;
+border-radius: 10px;
+}
+
+.detail-label {
+display: block;
+color: #8994a8;
+font-size: 10px;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+margin-bottom: 4px;
+}
+
+.skill-name {
+color: #344967;
+font-size: 13px;
+font-weight: bold;
+}
+
+/* Learning Status */
+.learning-status {
+display: inline-block;
+padding: 6px 11px;
+background-color: #e4f8ed;
+color: #218452;
+border-radius: 20px;
+font-size: 11px;
+font-weight: bold;
+}
+
+/* Highlight Class Required by Assignment */
+.highlight {
+border: 2px solid #f0b429;
+background-color: #fffaf0;
+box-shadow: 0 8px 25px rgba(240, 180, 41, 0.18);
+}
+
+.highlight .student-avatar {
+background-color: #fff0bd;
+color: #986b00;
+}
+
+.highlight::after {
+content: " ★ FEATURED STUDENT";
+display: block;
+margin-top: 16px;
+color: #a47708;
+font-size: 10px;
+font-weight: bold;
+letter-spacing: 0.5px;
+}
+
+/* Footer */
+.dashboard-footer {
+display: flex;
+justify-content: space-between;
+gap: 15px;
+padding: 20px 0;
+border-top: 1px solid #dfe5ef;
+color: #7c879b;
+font-size: 12px;
+}
+
+/* Tablet Layout */
+@media (max-width: 900px) {
+.profile-container {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.dashboard-header h1 {
+    font-size: 25px;
+}
+
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+.dashboard {
+width: 92%;
+margin: 20px auto;
+}
+
+.dashboard-header {
+    padding: 23px;
+}
+
+.dashboard-header h1 {
+    font-size: 21px;
+}
+
+.header-description {
+    font-size: 12px;
+}
+
+.header-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    flex-shrink: 0;
+}
+
+.profile-container {
+    grid-template-columns: 1fr;
+}
+
+.section-heading {
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.section-heading h2 {
+    font-size: 21px;
+}
+
+.live-badge {
+    font-size: 10px;
+}
+
+.dashboard-footer {
+    flex-direction: column;
+}
+
+}

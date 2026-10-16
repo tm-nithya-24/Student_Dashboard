@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+            <div>
+                <p class="subtitle">STUDENT INFORMATION SYSTEM</p>
+                <h1 id="mainHeading">Student Management Dashboard</h1>
+                <p class="header-description">
+                    Manage student profiles and track learning progress.
+                </p>
+            </div>
+            <div class="header-icon">🎓</div>
+        </header>
+
+        <!-- Student Statistics -->
+        <section class="statistics">
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div>
+                    <p class="stat-label">Total Students</p>
+                    <h2 id="studentCount">0</h2>
+                    <p class="stat-description">Currently displayed profiles</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Notice -->
+        <section class="welcome-notice">
+            <div>
+                <h3>Welcome to the Dashboard!</h3>
+                <p id="welcomeMessage">
+                    Welcome! Explore student profiles and their learning journeys.
+                </p>
+            </div>
+        </section>
+
+        <!-- Student Profiles -->
+        <section class="profiles-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">STUDENT DIRECTORY</p>
+                    <h2>Student Profiles</h2>
+                </div>
+                <span class="live-badge">
+                    <span class="status-dot"></span>
+                    Live Dashboard
+                </span>
+            </div>
+
+            <!-- JavaScript generates all student cards here -->
+            <div id="profileContainer" class="profile-container"></div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <p>Student Management Dashboard</p>
+            <p>Built with HTML, CSS, JavaScript & DOM</p>
+        </footer>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
